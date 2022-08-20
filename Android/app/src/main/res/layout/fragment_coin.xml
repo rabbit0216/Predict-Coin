@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="                                   "
+        android:textSize="48dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btc"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="42dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bitcoin"
+        app:layout_constraintBottom_toTopOf="@+id/btc_text"
+        app:layout_constraintEnd_toStartOf="@+id/eithereum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/btc_text"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="68dp"
+        android:text="비트코인"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/sandbox"
+        app:layout_constraintEnd_toStartOf="@+id/eithereum_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btc" />
+
+    <ImageButton
+        android:id="@+id/eithereum"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/eithereum"
+        app:layout_constraintBottom_toTopOf="@+id/eithereum_text"
+        app:layout_constraintEnd_toStartOf="@+id/ada"
+        app:layout_constraintStart_toEndOf="@+id/btc"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/eithereum_text"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="69dp"
+        android:text="이더리움"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bora"
+        app:layout_constraintEnd_toStartOf="@+id/ada_text"
+        app:layout_constraintStart_toEndOf="@+id/btc_text"
+        app:layout_constraintTop_toBottomOf="@+id/eithereum" />
+
+    <ImageButton
+        android:id="@+id/ada"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ada"
+        app:layout_constraintBottom_toTopOf="@+id/ada_text"
+        app:layout_constraintEnd_toStartOf="@+id/solana"
+        app:layout_constraintStart_toEndOf="@+id/eithereum"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/ada_text"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="69dp"
+        android:text="에이다"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ripple"
+        app:layout_constraintEnd_toStartOf="@+id/solana_text"
+        app:layout_constraintStart_toEndOf="@+id/eithereum_text"
+        app:layout_constraintTop_toBottomOf="@+id/ada" />
+
+    <ImageButton
+        android:id="@+id/solana"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="33dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/solana"
+        app:layout_constraintBottom_toTopOf="@+id/solana_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ada"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/solana_text"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="69dp"
+        android:text="솔라나"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/milk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ada_text"
+        app:layout_constraintTop_toBottomOf="@+id/solana" />
+
+    <ImageButton
+        android:id="@+id/sandbox"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sandbox"
+        app:layout_constraintBottom_toTopOf="@+id/sandbox_text"
+        app:layout_constraintEnd_toStartOf="@+id/bora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btc_text"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/sandbox_text"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="334dp"
+        android:text="샌드박스"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bora_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandbox" />
+
+    <ImageButton
+        android:id="@+id/bora"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="37dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bora_text"
+        app:layout_constraintEnd_toStartOf="@+id/ripple"
+        app:layout_constraintStart_toEndOf="@+id/sandbox"
+        app:layout_constraintTop_toBottomOf="@+id/eithereum_text"
+        app:srcCompat="@drawable/bora"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/bora_text"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="333dp"
+        android:text="보라"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ripple_text"
+        app:layout_constraintStart_toEndOf="@+id/sandbox_text"
+        app:layout_constraintTop_toBottomOf="@+id/bora" />
+
+    <ImageButton
+        android:id="@+id/ripple"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ripple"
+        app:layout_constraintBottom_toTopOf="@+id/ripple_text"
+        app:layout_constraintEnd_toStartOf="@+id/milk"
+        app:layout_constraintStart_toEndOf="@+id/bora"
+        app:layout_constraintTop_toBottomOf="@+id/ada_text"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/ripple_text"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="334dp"
+        android:text="리플"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/milk_text"
+        app:layout_constraintStart_toEndOf="@+id/bora_text"
+        app:layout_constraintTop_toBottomOf="@+id/ripple" />
+
+    <ImageButton
+        android:id="@+id/milk"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="34dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/milk"
+        app:layout_constraintBottom_toTopOf="@+id/milk_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ripple"
+        app:layout_constraintTop_toBottomOf="@+id/solana_text"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/milk_text"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="335dp"
+        android:text="밀크"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ripple_text"
+        app:layout_constraintTop_toBottomOf="@+id/milk" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
