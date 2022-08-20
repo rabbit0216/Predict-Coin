@@ -3,9 +3,6 @@
 #3일간 미래데이터(BTC) : df3
 #과거 30일간의 날짜 : date
 from LSTM_MODEL import *;
-
-#======================== DB ========================
-
 from sqlalchemy import create_engine
 import pymysql
 from dateutil.relativedelta import relativedelta
@@ -23,7 +20,6 @@ def setFutureDate(x):
 
 pd.options.display.float_format = '{:.5f}'.format 
 future_df = setFutureDate(df3)
-#future_df.set_index('date', inplace=True)
 
 #==============과거 예측 데이터 + 날짜===============
 def setPastDate(x):
@@ -39,18 +35,14 @@ past_df = setPastDate(testPredict)
 past_df = past_df.iloc[:-1]
 
 #================미래 예측 데이터 DB에 저장=================
-
-future_db_connection_str = 'mysql+pymysql://LKK:12184878@13.124.58.0/future'
+future_db_connection_str = 'mysql+pymysql://LKK:12184878@13.124.3.72/future'
 future_db_connection = create_engine(future_db_connection_str)
 future_conn = future_db_connection.connect()
-
-
 future_df.to_sql('BTC', con=future_db_connection, if_exists='replace')
 
 #================과거 예측 데이터 DB에 저장=================
-past_db_connection_str = 'mysql+pymysql://LKK:12184878@13.124.58.0/past'
+past_db_connection_str = 'mysql+pymysql://LKK:12184878@13.124.3.72/past'
 past_db_connection = create_engine(past_db_connection_str)
 past_conn = past_db_connection.connect()
-
 past_df.to_sql('BTC', con=past_db_connection, if_exists='replace')
 
