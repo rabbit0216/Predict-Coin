@@ -11,7 +11,7 @@
 
 
 
-## 개발 환경
+## 요약
 
 ![image](https://user-images.githubusercontent.com/67730991/185305267-6fd8269b-7218-4f2d-96fd-ff20c0bf76cc.png)
 * Front-end
@@ -20,9 +20,6 @@
 * Back-end
   * LSTM 모델을 통해 예측한 가격을 DB에 저장
   * DB에 저장된 현재가와 예측가를 php로 보여줌
-
-
-## 기능
 
 
 ## 결과
