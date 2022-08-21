@@ -18,6 +18,7 @@ LSTM 모델을 이용하여 암호화폐 가격을 예측하고 예측가와 현
 
 * Front-end 
 &nbsp;&nbsp;<img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat-square&logo=Android Studio&logoColor=white"/> 
+
   * 암호화폐 현재가와 예측가를 그래프와 표의 형태로 보여줌
 <br/>
 
