@@ -13,8 +13,8 @@ LSTM 모델을 이용하여 암호화폐 가격을 예측하고 예측가와 현
 #### LSTM
 <img src="Image/lstm_model.PNG" width="500">
 
-#### Environment
-<img src="Image/environment.PNG" width="500"> 
+#### Architecture
+<img src="Image/architecture.PNG" width="600"> 
 
 * Front-end 
 &nbsp;&nbsp;<img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat-square&logo=Android Studio&logoColor=white"/> 
