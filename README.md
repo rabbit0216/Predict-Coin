@@ -15,7 +15,7 @@
 
 ![image](https://user-images.githubusercontent.com/67730991/185305267-6fd8269b-7218-4f2d-96fd-ff20c0bf76cc.png)
 * Front-end
-  * 암호화폐 현재가와 예측가를 그래프와 표의 형태로 보여줌
+  * 암호화폐 현재가와 예측가를 그래프와 표의 형태로 보여줌 (1시간 간격)
   
 * Back-end
   * LSTM 모델을 통해 예측한 가격을 DB에 저장
@@ -23,3 +23,5 @@
 
 
 ## 결과
+
+<img src="https://user-images.githubusercontent.com/67730991/185785773-94c4bc18-959b-430c-a341-b09fc62cad30.png" width="600">
