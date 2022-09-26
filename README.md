@@ -7,17 +7,18 @@
 
 ## Description
 
-투자 손실률을 줄일 수 있는 수단 증가시키기 위한 목적으로 해당 프로젝트를 진행하기로 결정했다.
-LSTM 모델을 이용하여 암호화폐 가격을 예측하고 예측가와 현재가를 그래프와 표의 형태로 보여준다.
+* 투자 손실률을 줄일 수 있는 수단 증가시키기 위한 목적으로 해당 프로젝트를 진행하기로 결정
+* `LSTM 모델`을 이용하여 암호화폐 가격을 예측하고 예측가와 현재가를 그래프와 표의 형태로 보여준다. 
+</br>
 
-#### LSTM
+### LSTM
 <img src="Image/lstm_model.PNG" width="500">
+</br>
 
-#### Architecture
+### Architecture
 <img src="Image/architecture.PNG" width="600"> 
 
-* Front-end 
-&nbsp;&nbsp;<img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat-square&logo=Android Studio&logoColor=white"/> 
+* Front-end &nbsp;&nbsp;<img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat-square&logo=Android Studio&logoColor=white"/> 
 
   * 암호화폐 현재가와 예측가를 그래프와 표의 형태로 보여줌
 <br/>
@@ -34,6 +35,6 @@ LSTM 모델을 이용하여 암호화폐 가격을 예측하고 예측가와 현
   * DB에 저장된 현재가와 예측가를 php로 보여줌
 <br/>
 
-## 결과
+## Image
 
 <img src="Image/result.png" width="600">
